@@ -7,6 +7,7 @@
 #include "rapidjson/stringbuffer.h"
 
 #include <iostream>
+// stolen from https://github.com/hailo-ai/hailort
 #define RGB_FEATURES_SIZE (3)
 #define RGBA_FEATURES_SIZE (4)
 #define GRAY8_FEATURES_SIZE (1)
@@ -42,7 +43,7 @@ gst_hailonet_get_format_string(const hailo_vstream_info_t &input) {
   case HAILO_FORMAT_ORDER_I420:
     return "I420";
   default:
-    std::cerr << "unsupported network input";
+    std::cerr << "unsupported network input format";
     exit(1);
   }
 }
