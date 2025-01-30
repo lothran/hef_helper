@@ -1,6 +1,5 @@
 #include "hailo/hailort_common.hpp"
 #include "hailo/hailort_defaults.hpp"
-
 #include "hailo/hef.hpp"
 #include "rapidjson/document.h"
 #include "rapidjson/prettywriter.h"
